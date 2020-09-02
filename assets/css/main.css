@@ -304,6 +304,7 @@ input, select, textarea {
 /* Row */
 
 	.row {
+		text-align: center;
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
@@ -2256,15 +2257,17 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: inline;
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
 		padding-left: 0;
+		padding-top: 1.5em;
+		text-align: center;
 	}
 
 		ul.actions li {
-			padding: 0 0 0 1em;
+			padding: 0 0 0 0;
 			vertical-align: middle;
 		}
 
@@ -2488,6 +2491,15 @@ input, select, textarea {
 			color: #49bf9d !important;
 		}
 
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		.button:active {
+			background-color: rgba(73, 191, 157, 0.1);
+			border-color: #49bf9d;
+			color: #49bf9d !important;
+		}
+
 		input[type="submit"].icon,
 		input[type="reset"].icon,
 		input[type="button"].icon,
@@ -2562,10 +2574,143 @@ input, select, textarea {
 			cursor: default;
 		}
 
+
+
+/* Button Private */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button-private {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		background-color: transparent;
+		border-radius: 0.35em;
+		border: solid 3px #efefef;
+		color: #787878 !important;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 400;
+		height: 3.15em;
+		height: calc(2.75em + 6px);
+		line-height: 2.75em;
+		min-width: 10em;
+		padding: 0 1.5em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover,
+	.button-private:hover {
+		border-color: #db3a12;
+		color: #db3a12 !important;
+	}
+
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active,
+	.button-private:active {
+		background-color: rgba(73, 191, 157, 0.1);
+		border-color: #db3a12;
+		color: #db3a12 !important;
+	}
+
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active,
+	.button-private:active {
+		background-color: rgba(73, 191, 157, 0.1);
+		border-color: #db3a12;
+		color: #db3a12 !important;
+	}
+
+	input[type="submit"].icon,
+	input[type="reset"].icon,
+	input[type="button"].icon,
+	.button-private.icon {
+		padding-left: 1.35em;
+	}
+
+	input[type="submit"].icon:before,
+	input[type="reset"].icon:before,
+	input[type="button"].icon:before,
+	.button-private.icon:before {
+		margin-right: 0.5em;
+	}
+
+	input[type="submit"].fit,
+	input[type="reset"].fit,
+	input[type="button"].fit,
+	.button-private.fit {
+		min-width: 0;
+		width: 100%;
+	}
+
+	input[type="submit"].small,
+	input[type="reset"].small,
+	input[type="button"].small,
+	.button-private.small {
+		font-size: 0.8em;
+	}
+
+	input[type="submit"].large,
+	input[type="reset"].large,
+	input[type="button"].large,
+	.button-private.large {
+		font-size: 1.35em;
+	}
+
+	input[type="submit"].primary,
+	input[type="reset"].primary,
+	input[type="button"].primary,
+	.button-private.primary {
+		background-color: #49bf9d;
+		border-color: #49bf9d;
+		color: #ffffff !important;
+	}
+
+	input[type="submit"].primary:hover,
+	input[type="reset"].primary:hover,
+	input[type="button"].primary:hover,
+	.button-private.primary:hover {
+		background-color: #5cc6a7;
+		border-color: #5cc6a7;
+	}
+
+	input[type="submit"].primary:active,
+	input[type="reset"].primary:active,
+	input[type="button"].primary:active,
+	.button-private.primary:active {
+		background-color: #3eb08f;
+		border-color: #3eb08f;
+	}
+
+	input[type="submit"].disabled, input[type="submit"]:disabled,
+	input[type="reset"].disabled,
+	input[type="reset"]:disabled,
+	input[type="button"].disabled,
+	input[type="button"]:disabled,
+	.button-private.disabled,
+	.button-private:disabled {
+		background-color: #e7e7e7 !important;
+		border-color: #e7e7e7 !important;
+		color: #b2b2b2 !important;
+		cursor: default;
+	}
+
 /* Work Item */
 
 	.work-item {
-		margin: 0 0 2em 0;
+		margin: 0 0 3em 0;
 	}
 
 		.work-item .image {
