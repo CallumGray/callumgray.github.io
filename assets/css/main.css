@@ -2260,7 +2260,6 @@ input, select, textarea {
 		display: inline;
 		cursor: default;
 		list-style: none;
-		margin-left: -1em;
 		padding-left: 0;
 		padding-top: 1.5em;
 		text-align: center;
@@ -2725,7 +2724,7 @@ input, select, textarea {
 		.work-item p {
 			font-size: 1em;
 			line-height: 1.5em;
-			margin: 0;
+			margin-bottom: 1em;
 		}
 
 /* Header */
