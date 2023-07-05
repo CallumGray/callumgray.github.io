@@ -2477,14 +2477,6 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #018201;
-			color: #018201 !important;
-		}
-
-		input[type="submit"]:active,
-		input[type="reset"]:active,
-		input[type="button"]:active,
-		.button:active {
 			background-color: rgba(114, 155, 175, 0.1);
 			border-color: #00d400;
 			color: #00d400 !important;
@@ -2494,11 +2486,12 @@ input, select, textarea {
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: rgba(114, 155, 175, 0.1);
-			border-color: #00d400;
-			color: #00d400 !important;
+			background-color: rgba(0, 212, 0, 0.69);
+			border-color: #363636;
+			color: #363636 !important;
 		}
 
+		
 		input[type="submit"].icon,
 		input[type="reset"].icon,
 		input[type="button"].icon,
@@ -2746,7 +2739,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		background-color: #000;
 		background-attachment: scroll,								scroll;
 		background-image: url("images/overlay.png"), url("../../images/bgasdf.jpg");
 		background-position: top left,							top left;
@@ -2755,7 +2748,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em;
+		padding: 8em 3em;
 		position: fixed;
 		text-align: right;
 		top: 0;
