@@ -8,170 +8,59 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/faviconLaptop.png">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/all.css">
 	</head>
-	
-	<body class="is-preload">
 
-		<!-- Left -->
-		<header id="header">
-			<div class="inner">
-				<div class="image avatar"><img src="images/avatar.jpg" alt="" /></div>
-				<h1>
-					<p><strong>Callum Gray</strong></p>
-					<p>Mathematics&nbsp;/&nbsp;Python&nbsp;/&nbsp;SQL</p>
-					<p>C++&nbsp;/&nbsp;C#&nbsp;/&nbsp;Java</p>
-					<p>PHP&nbsp;/&nbsp;JavaScript&nbsp;/&nbsp;HTML</p>
-				</h1>
-			</div>
-		</header>
+	<body>
+		<div class="container-fluid">
+			<div class="row flex-column flex-md-row">
+				
+				<nav id="sidebar" class="col-12 col-md-3 col-lg-3 bg-light d-flex flex-column justify-content-center align-items-center">
+					<div class="sidebar-header mb-4" style="text-align: center;">
+						<h3 style="text-align: center;">Callum Gray</h3>
+					</div>
+					<ul style="text-align: center;">
+						<li class="active">
+							<a href="#">Python / SQL</a>
+						</li>
+						<li>
+							<a href="dashboards.html">Power BI / Data Analytics</a>
+						</li>
+						<li>
+							<a href="games.html">Unity / Unreal Engine</a>
+						</li>
+					</ul>
+				</nav>
 
-		<!-- Right -->
-		<div id="main">
-			<div class="row">
-			
-				<!-- Infestation UE4 -->
-				<div class="col-6 col-12-medium work-item">
-					<div class="video-container" style="margin-bottom:1em;">
-						<iframe src="https://www.youtube.com/embed/aa9uyuL0Wjw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					
-					<h3>
-						Infestation (Blueprint / UE4)
-					</h3>
-					
-					<p>
-						UE4 first person shooter, created using Blender for modelling and animation, and Blueprint for the scripting.
-						A work in progress, with a planned rewrite in C++.
-						Blueprints have been structured to be easily scalable and maintainable. 
-					</p>
-					
-					<ul class="actions">
-						<li>
-							<a href="https://github.com/CallumGray/Infestation-Blueprints" class="button">View Blueprints</a>
-						</li>
-					</ul>
-				</div>
-				
-				<!-- Eggsistential Crisis UE4 -->
-				<div class="col-6 col-12-medium work-item">
-					<div class="video-container" style="margin-bottom:1em;">
-						<iframe src="https://www.youtube.com/embed/CRjVT5OqFdY"" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					
-					<h3>
-						Eggsistential Crisis (C++ / UE4)
-					</h3>
-					
-					<p>
-						Platformer where you play as an egg which takes damage upon impact. The egg cracking is visualised, and upon taking too much damage, the egg cracks open.
-					</p>
-					
-					<ul class="actions">
-						<li>
-							<a href="https://github.com/CallumGray/Egg" class="button">View Code</a>
-						</li>
-					</ul>
-				</div>
-				
-				
-				<!-- Countdown Numbers -->
-				<div class="col-6 col-12-medium work-item">
-					<div class="video-container" style="margin-bottom:1em;">
-						<iframe src="https://www.youtube.com/embed/llr1rEe9FtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					
-					<h3>
-						Countdown Numbers (Python)
-					</h3>
-					
-					<p>
-						Algorithm for the numbers game from the TV show Countdown. Displays all possible (non trivial) solutions, given in infix notation. 
-						A good example of a mathematically complex recursive alogorithm using multi-dimensional data structures, which has been broken down 
-						into many subordinate functions to help achieve its goal.
-					</p>
-					
-					<ul class="actions">
-						<li>
-							<a href="https://github.com/CallumGray/Countdown" class="button">View Code</a>
-						</li>
-					</ul>
-				</div>
-				
-				<!-- Countdown Letters -->
-				<div class="col-6 col-12-medium work-item">
-					<div class="video-container" style="margin-bottom:1em;">
-						<iframe src="https://www.youtube.com/embed/HZRiOzN5XtE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					
-					<h3>
-						Countdown Letters (Python)
-					</h3>
-					
-					<p>
-						Algorithm for the letters game from the TV show Countdown. Gives the longest possible words and their definitions, using a trie data structure generated from a large file of words.
-					</p>
-					
-					<ul class="actions">
-						<li>
-							<a href="https://github.com/CallumGray/Countdown" class="button">View Code</a>
-						</li>
-					</ul>
-				</div>
-				
-				<!-- Recipe Search Engine -->
-				<div class="col-6 col-12-medium work-item">
-					<div class="video-container" style="margin-bottom:1em;">
-						<iframe src="https://www.youtube.com/embed/grzSN-H5UdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					
-					<h3>
-						Recipe Search Engine (Python)
-					</h3>
-					
-					<p>
-						Python search engine for a large csv file (~40MB) of cooking recipes. Users input keywords, and the search engine will provide the closest matches using specified scoring. 
-						Uses an inverted index data structure, which gives very fast search performance after indexing the file in an initial build.
-					</p>
-					
-					<ul class="actions">
-						<li>
-							<a href="https://github.com/CallumGray/Search-Engine" class="button">View Code</a>
-						</li>
-					</ul>
-				</div>
-				
-				<!-- Stuck in a Loop UE4 -->
-				<div class="col-6 col-12-medium work-item">
-					<div class="video-container" style="margin-bottom:1em;">
-						<iframe src="https://www.youtube.com/embed/JHzCzeRSMXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					
-					<h3>
-						Stuck in a Loop (C++ / UE4)
-					</h3>
-					
-					<p>
-						Inspired by the game-jam theme of Ludum Dare #47 "Stuck in a Loop". Flexible C++ code to ensure reusability 
-						and as much customisation as possible within the engine using Blueprints (The speed of the wheel, amount of lanes, amount of mines, and 
-						spacing between the mines can all be changed within the editor). All models and animations were made in Blender.
-					</p>
-					
-					<ul class="actions">
-						<li>
-							<a href="https://github.com/CallumGray/Stuck-In-A-Loop" class="button">View Code</a>
-						</li>
-					</ul>
+				<div class="col-12 col-md-9 col-lg-9 ms-sm-auto px-md-4">
+					<main role="main" class="pt-3">
+						<div class="d-flex justify-content-center">
+							<h1 class="header-container">
+								
+								<a href="games.html" class="chevron-left"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a>
+								<span class="mx-2">Python / SQL</span>
+								<a href="dashboards.html" class="chevron-right"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+								
+							</h1>
+						</div>
+						
+						<hr>
+						
+						<p>MELEE PROJECT CAROUSEL</p>
+						
+						<hr>
+
+						<p>INFINITE FUSION CAROUSEL</p>
+					</main>
 				</div>
 			</div>
 		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
 	</body>
+
+	<script src='assets/js/bootstrap.min.js'></script>
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/all.js"></script> <!-- Font awesome -->
+		
 </html>
