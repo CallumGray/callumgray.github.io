@@ -84,11 +84,20 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -10;
+}
+
+.carousel-container .carousel-item{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background-color: black;
 }
 
 @media (max-width: 991.98px) {
     #sidebar {
+        position: relative;
         height: auto; /* Auto height on small screens */
         max-height: 50vh; /* Maximum height */
         overflow-y: auto; /* Enable scrolling */
