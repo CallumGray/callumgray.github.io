@@ -23,13 +23,13 @@
 					</div>
 					<ul class="mb-4" style="text-align: center;">
 						<li>
-							<a href="index.html">Python / SQL</a>
+							<a href="index.html">Python</a>
 						</li>
 						<li>
 							<a href="dashboards.html">Power BI</a>
 						</li>
 						<li class="active">
-							<a href="#">Game Development</a>
+							<a href="#">Unreal Engine</a>
 						</li>
 					</ul>
 				</nav>
@@ -41,9 +41,9 @@
 						<!-- Header with chevrons -->
 						<div class="d-flex justify-content-center d-none d-lg-block">
 							<h1 class="header-container">
-								<a href="dashboards.html" class="chevron-left"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a>
-								<span class="mx-2">Game Development</span>
-								<a href="index.html" class="chevron-right"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+								<!--a href="dashboards.html" class="chevron-left"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a-->
+								<span class="mx-2">Unreal Engine</span>
+								<!--a href="index.html" class="chevron-right"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a-->
 							</h1>
 						</div>
 
@@ -54,13 +54,19 @@
 							<div class="col-12 col-lg-6 my-2">
 
 								<h5>
-									Eggsistential Crisis <span class="text-muted">(C++ / Unreal Engine 4)</span>
+									Eggsistential Crisis <span class="text-muted">(C++ / Blender)</span>
 								</h5>
 
 								<p>
-									Platformer where a rolling egg is controlled, which takes damage upon impact. The egg cracking is visualised, and upon taking too much damage, the egg cracks fully open, ending the game.
+									Platformer where the player controls an egg, attempting to roll to the flagpole at the end 
+									of the level without cracking open. Every time the egg is struck, it will crack based on the
+									force of the impact, so avoiding long falls and moving obstacles is key.
+								</p>
 
-									Decals etc 
+								<p>
+									All models were created in <strong>Blender</strong>, with cracks in the egg being decals that are added to the surface of the model at the position it is
+									struck. Written using flexible <strong>C++</strong> code to ensure readability, reusability, and as much freedom as possible to tweak variables
+									using Blueprint. This allows for <strong>quick refinement</strong> from within the editor to perfect the look and feel of the game. 
 								</p>
 								
 								<div class="d-flex justify-content-center mt-4">
@@ -91,12 +97,25 @@
 
 							<div class="col-12 col-lg-6 my-2">
 								<h5>
-									Infestation <span class="text-muted">(Unreal Engine 4)</span>
+									Infestation <span class="text-muted">(Blueprint / Blender)</span>
 								</h5>
 
 								<p>
-									UE4 first person shooter, created using Blender for modelling and animation, and UE4 Blueprint for the scripting.
-									Blueprints have been structured to be easily scalable and maintainable. 
+									A first person shooter where the player fights off waves of spiders, progressively getting more challenging.
+									Ammunition is dropped after defeating enemies, which can be collected by the player.  	
+									The player has access to four unique weapons:
+									<ul class="custom-bullets">
+										<li class="green">A long range precision weapon with little spread, but fairly low power.</li>
+										<li class="blue">A short range weapon with high spread, but very high power.</li>
+										<li class="yellow">A grenade launcher, where the projectiles can bounce off surfaces.</li>
+										<li class="red">A rocket launcher which creates a large explosion on impact.</li>
+									</ul>
+								</p>
+
+								<p>
+									Models were created and animated using <strong>Blender</strong>, and are fully rigged to ensure they ragdoll properly within Unreal Engine.
+									A complex shader was applied to the gun to prevent it clipping through walls, and a dynamic material was used to change 
+									its colour. Scripted in Unreal Engine's Blueprint, with care taken to ensure <strong>scalability</strong> as the project became more complex.
 								</p>
 
 								<div class="d-flex justify-content-center mt-4">
