@@ -95,6 +95,14 @@ h3 {
     background-color: black;
 }
 
+.carousel-container .carousel-item img {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.carousel-caption {
+    top: 80%; /* Adjust this value to move the captions down */
+}
+
 @media (max-width: 991.98px) {
     #sidebar {
         position: relative;
