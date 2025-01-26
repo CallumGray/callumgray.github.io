@@ -48,7 +48,12 @@ h3 {
 #sidebar ul li.active a {
     font-weight: bold;
     color: white;
-    /*background-color: rgba(0, 0, 0, 0.25);  Light background for active item */
+    cursor:text;
+}
+
+#sidebar ul li a:hover {
+    font-weight: bold;
+    color: white;
 }
 
 .chevron-left, .chevron-right {
