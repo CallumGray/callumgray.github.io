@@ -59,6 +59,7 @@ h3 {
 .chevron-left, .chevron-right {
     color: black; /* Color of the chevrons */
     text-decoration: none; /* Remove underline */
+    font-size: 0.66em;
 }
 
 .header-container {
